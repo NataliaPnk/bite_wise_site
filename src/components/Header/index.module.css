@@ -1,0 +1,26 @@
+.header {
+  width: 100%;
+  max-height: 70px;
+  min-height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(139, 194, 223);
+}
+
+.header a {
+  font-size: 18px;
+  color: rgb(43, 43, 78);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+
+  text-decoration: none;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.header a:hover {
+  color: rgb(164, 13, 56);
+}
