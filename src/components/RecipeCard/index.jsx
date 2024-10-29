@@ -13,20 +13,33 @@ export default function RecipeCard({
     <div className={s.recipeCard}>
       <img src={image} />
       <h3>{name}</h3>
-      <p>Ingredients: {ingredients.join(", ")}</p>
 
+      <div>
+      <h4>Ingredients</h4>
+      <ul>
+        {
+          ingredients.map((el) => <li key={el} 
+          style={{ whiteSpace: "pre-line", marginLeft: "40px" }}
+          >{ el }</li>)
+        }
+      </ul>
+
+
+
+        <h4>Instructions</h4>
       <ol>
-        {instructions.map((instruction, index) => (
+        {instructions.map((el) => (
           <li
-            key={index}
-            style={{ whiteSpace: "pre-line", marginLeft: "20px" }}
+            key={el}
+            style={{ whiteSpace: "pre-line", marginLeft: "40px" }}
           >
-            {instruction}
+            {el}
           </li>
         ))}
       </ol>
       
       <span>Meal type: {mealType}</span>
+      </div>
     </div>
   );
 }

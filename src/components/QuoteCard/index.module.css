@@ -1,0 +1,30 @@
+.quoteCard {
+  border: solid 2px black;
+  border-radius: 10px;
+
+  padding: 20px;
+  margin: 20px 30px;
+
+  background-color: aliceblue;
+  position: relative;
+}
+
+.quoteCard p {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(85, 14, 74);
+  font-family: "Raleway", sans-serif;
+
+  padding-bottom: 25px;
+}
+
+.quoteCard span {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(14, 79, 119);
+  font-family: "Raleway", sans-serif;
+
+  position: absolute;
+  right: 5%;
+  bottom: 15%;
+}
