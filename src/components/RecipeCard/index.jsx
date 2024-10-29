@@ -1,5 +1,6 @@
 import React from "react";
 import s from "../RecipeCard/index.module.css";
+import { Link } from "react-router-dom";
 
 export default function RecipeCard({
   id,
@@ -10,36 +11,39 @@ export default function RecipeCard({
   mealType,
 }) {
   return (
-    <div className={s.recipeCard}>
-      <img src={image} />
-      <h3>{name}</h3>
+    <Link to={`/recipes/${id}`} className='link' >
+      <div className={s.recipeCard}>
+        <img src={image} />
+        <h3>{name}</h3>
 
-      <div>
-      <h4>Ingredients</h4>
-      <ul>
-        {
-          ingredients.map((el) => <li key={el} 
-          style={{ whiteSpace: "pre-line", marginLeft: "40px" }}
-          >{ el }</li>)
-        }
-      </ul>
+        <div>
+          <h4>Ingredients</h4>
+          <ul>
+            {ingredients.map((el) => (
+              <li
+                key={el}
+                style={{ whiteSpace: "pre-line", marginLeft: "40px" }}
+              >
+                {el}
+              </li>
+            ))}
+          </ul>
 
+          <h4>Instructions</h4>
+          <ol>
+            {instructions.map((el) => (
+              <li
+                key={el}
+                style={{ whiteSpace: "pre-line", marginLeft: "40px" }}
+              >
+                {el}
+              </li>
+            ))}
+          </ol>
 
-
-        <h4>Instructions</h4>
-      <ol>
-        {instructions.map((el) => (
-          <li
-            key={el}
-            style={{ whiteSpace: "pre-line", marginLeft: "40px" }}
-          >
-            {el}
-          </li>
-        ))}
-      </ol>
-      
-      <span>Meal type: {mealType}</span>
+          <span>Meal type: {mealType}</span>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }

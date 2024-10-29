@@ -12,6 +12,8 @@ import { Context } from "./context";
 import { getQuotes } from "./requests/quotes_req";
 import { getPosts } from "./requests/posts_req";
 import { getUsers } from "./requests/users_req";
+import SingleRecipePage from "./pages/SingleRecipePage";
+import SingleQuotePage from "./pages/SingleQuotePage";
 
 function App() {
   const [recipes, setRecipes] = useState([]);
@@ -33,7 +35,9 @@ function App() {
 
         <Routes>
           <Route path="/" element={<RecipesPage />} />
+          <Route path="/recipes/:recipe_id" element={<SingleRecipePage />} />
           <Route path="/quotes" element={<QuotesPage />} />
+          <Route path="/quotes/:quote_id" element={<SingleQuotePage />} />
           <Route path="/users" element={<UsersPage />} />
           <Route path="/posts" element={<PostsPage />} />
         </Routes>

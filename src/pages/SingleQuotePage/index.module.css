@@ -1,0 +1,48 @@
+.quoteWrapper {
+  width: 100%;
+  min-height: 500px;
+  padding-top: 130px;
+
+  background-image: url("https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-color: rgb(114, 107, 107);
+  background-blend-mode: multiply;
+}
+
+.quoteWrapper > div {
+  border: solid 2px black;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 30px;
+  margin: 20px 30px;
+
+  background-color: aliceblue;
+  position: relative;
+}
+
+.quoteWrapper > div p {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(60, 15, 52);
+  font-family: "Raleway", sans-serif;
+
+  padding-bottom: 25px;
+}
+
+.quoteWrapper > div span {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(14, 79, 119);
+  font-family: "Raleway", sans-serif;
+
+  position: absolute;
+  right: 5%;
+  bottom: 15%;
+}
+
+.quoteWrapper svg {
+  color: rgb(95, 17, 230);
+}

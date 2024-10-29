@@ -10,14 +10,26 @@ export default function PostCard({ id, title, body, tags, reactions, views }) {
     <div className={s.postCard}>
       <h3>{title}</h3>
       <p className={s.body}>{body}</p>
-      <div>{tags
-      .map(el => <p key={ el }>{ el }</p>)
-}</div>
       <div>
-      <span>{likes} <span><AiOutlineLike /></span></span>
-      <span>{dislikes} <span><AiOutlineDislike /></span> </span>
+        {tags.map((el) => (
+          <p key={el}>{el}</p>
+        ))}
+      </div>
+      <div>
+        <span>
+          {likes}{" "}
+          <span>
+            <AiOutlineLike />
+          </span>
+        </span>
+        <span>
+          {dislikes}{" "}
+          <span>
+            <AiOutlineDislike />
+          </span>{" "}
+        </span>
       </div>
       <span>Views: {views}</span>
-      </div>
+    </div>
   );
 }
