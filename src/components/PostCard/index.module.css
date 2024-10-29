@@ -1,0 +1,100 @@
+.postCard {
+  display: flex;
+  flex-direction: column;
+
+  border: solid 2px black;
+  border-radius: 20px;
+
+  padding: 20px;
+  margin: 20px;
+
+  background-color: cadetblue;
+  cursor: pointer;
+}
+
+.postCard:hover {
+  background-color: rgb(187, 246, 128);
+}
+
+.postCard h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(173, 53, 29);
+  font-family: "Raleway", sans-serif;
+  padding: 20px 0 20px;
+}
+
+/* .postCard > div > p:first-child {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(53, 26, 20);
+  font-family: "Raleway", sans-serif;
+  line-height: 30px;
+} */
+
+.body {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(53, 26, 20);
+  font-family: "Raleway", sans-serif;
+  line-height: 30px;
+}
+
+.postCard > div p {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(79, 214, 6);
+  font-family: "Raleway", sans-serif;
+  line-height: 30px;
+
+  border: solid 2px rgb(40, 97, 59);
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgb(188, 225, 225);
+}
+
+.postCard div {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+
+  padding-top: 15px;
+}
+
+.postCard > div span {
+  font-size: 20px;
+  font-weight: 600;
+  color: blue;
+  font-family: "Raleway", sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.postCard > div > span span:first-child {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+
+.postCard > div > span svg {
+  width: 30px;
+  height: 30px;
+  color: rgb(207, 5, 5);
+}
+
+.postCard > span {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(212, 3, 135);
+  font-family: "Raleway", sans-serif;
+
+  background-color: rgb(141, 251, 214);
+  border-radius: 10px;
+  padding: 5px;
+
+  margin-top: 20px;
+  font-family: "Kanit", sans-serif;
+}

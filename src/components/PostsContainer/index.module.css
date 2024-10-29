@@ -1,0 +1,7 @@
+.postsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  padding-top: 40px;
+  background-color: rgb(181, 247, 225);
+}

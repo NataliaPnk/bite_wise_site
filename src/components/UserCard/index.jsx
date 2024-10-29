@@ -1,14 +1,17 @@
 import React from "react";
 import s from "../UserCard/index.module.css";
 
-export default function UserCard({ id, firstName, lastName, age, state }) {
+export default function UserCard({ id, firstName, lastName, age, address }) {
+
+  const { city, country } = address
   return (
     <div className={s.userCard}>
-      <p3>
-        Name: {firstName} {lastName}
-      </p3>
-      <p>{age}</p>
-      <span>{state}</span>
+      <h3>
+        {firstName} {lastName}
+      </h3>
+      <p><span>Age:</span> {age}</p>
+      <p><span>State:</span> {city}</p> 
+      <p> <span>Country:</span> {country}</p>
     </div>
   );
 }
