@@ -1,0 +1,47 @@
+.singleUserWrapper {
+  width: 100%;
+  min-height: 500px;
+  padding-top: 130px;
+
+  background-image: url("https://images.unsplash.com/photo-1612831457048-9823ce1ebb6e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: 50% 20%;
+  background-color: rgb(114, 107, 107);
+  background-blend-mode: multiply;
+}
+
+.singleUserWrapper > div {
+  border: solid 2px blue;
+  border-radius: 20px;
+
+  padding: 25px;
+  margin: 30px 60px;
+  background-color: rgb(235, 219, 244);
+
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.singleUserWrapper > div h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(112, 28, 67);
+  font-family: "Raleway", sans-serif;
+  padding: 15px 15px;
+
+  background-color: rgb(235, 236, 209);
+  border-radius: 10px;
+
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.singleUserWrapper > div p {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(50, 21, 35);
+  font-family: "Raleway", sans-serif;
+  padding: 20px 10px 10px;
+}
+
+.singleUserWrapper > div span {
+  color: blue;
+}

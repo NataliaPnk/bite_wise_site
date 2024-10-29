@@ -14,6 +14,7 @@ import { getPosts } from "./requests/posts_req";
 import { getUsers } from "./requests/users_req";
 import SingleRecipePage from "./pages/SingleRecipePage";
 import SingleQuotePage from "./pages/SingleQuotePage";
+import SingleUserPage from "./pages/SingleUserPage";
 
 function App() {
   const [recipes, setRecipes] = useState([]);
@@ -39,6 +40,7 @@ function App() {
           <Route path="/quotes" element={<QuotesPage />} />
           <Route path="/quotes/:quote_id" element={<SingleQuotePage />} />
           <Route path="/users" element={<UsersPage />} />
+          <Route path="/users/:user_id" element={<SingleUserPage />} />
           <Route path="/posts" element={<PostsPage />} />
         </Routes>
       </Context.Provider>

@@ -9,6 +9,10 @@
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
+.userCard :hover {
+  background-color: rgb(150, 242, 136);
+}
+
 .userCard h3 {
   font-size: 18px;
   font-weight: 600;
